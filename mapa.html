@@ -53,29 +53,28 @@
       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://mapbox.com">Mapbox</a>',
         maxZoom: 18,
-        
         tileSize: 512,
         zoomOffset: -1,
         id: 'mapbox.streets',
         accessToken: 'pk.eyJ1IjoiYmJyb29rMTU0IiwiYSI6ImNpcXN3dnJrdDAwMGNmd250bjhvZXpnbWsifQ.Nf9Zkfchos577IanoKMoYQ'
       }).addTo(mymap);
+
       var marker1 = L.marker([-27.60555,-48.62315]).addTo(mymap);
-      marker1.bindPopup("<b>Centro de Triagens São José</b><br>Centro de Atenção à Terceira Idade").openPopup();
+      marker1.bindPopup("<b>Centro de Triagens São José</b><br>Centro de Atenção à Terceira Idade");
       var marker2 = L.marker([-27.17494,-51.50342]).addTo(mymap);
-      marker2.bindPopup("<b>Centro de Triagens Joaçaba</b><br>Ginásio AABB").openPopup();
+      marker2.bindPopup("<b>Centro de Triagens Joaçaba</b><br>Ginásio AABB");
       var marker3 = L.marker([-27.40241,-51.22782]).addTo(mymap);
-      marker3.bindPopup("<b>Centro de Controle Coronavirus</b><br>Apenas Contato<br> Central de Atendimento ao Cidadão<br><b>(49) 3090-2160<b>").openPopup();
+      marker3.bindPopup("<b>Centro de Controle Coronavirus</b><br>Apenas Contato<br> Central de Atendimento ao Cidadão<br><b>(49) 3090-2160<b>");
       var marker4 = L.marker([-27.02343,-50.91751]).addTo(mymap);
-      marker4.bindPopup("<b>Secretaria de Saúde de Fraiburgo</b><br>Apenas Contato<br><b>(49) 3256-4000<b>").openPopup();
+      marker4.bindPopup("<b>Secretaria de Saúde de Fraiburgo</b><br>Apenas Contato<br><b>(49) 3256-4000<b>");
       var marker4 = L.marker([-27.01137,-51.14530]).addTo(mymap);
-      marker4.bindPopup("<b>Secretaria de Saúde de Videira</b><br>Apenas Contato<br><b>(49) 3533-7500<b>").openPopup();  
+      marker4.bindPopup("<b>Secretaria de Saúde de Videira</b><br>Apenas Contato<br><b>(49) 3533-7500<b>");  
       var marker5 = L.marker([-26.78566,-51.00905]).addTo(mymap);
-      marker5.bindPopup("<b>Centro de Triagens Caçador</b><br>Escola Henrique Julio Berger - 7h às 19h<br><b>(49) 3561-0910<b><br><b>(49) 3561-0924<b><br>Whatsapp<br><b>(49) 99113-5384<b><br><b>(49) 99118-4983<b>").openPopup();
+      marker5.bindPopup("<b>Centro de Triagens Caçador</b><br>Escola Henrique Julio Berger - 7h às 19h<br><b>(49) 3561-0910<b><br><b>(49) 3561-0924<b><br>Whatsapp<br><b>(49) 99113-5384<b><br><b>(49) 99118-4983<b>");
       var marker6 = L.marker([-26.77183,-51.02435]).addTo(mymap);
-      marker6.bindPopup("<b>Centro de Triagens Caçador</b><br>Hospital Maicé - 19h às 7h<br><b>(49) 3561-0910<b><br><b>(49) 3561-0924<b><br>Whatsapp<br><b>(49) 99113-5384<b><br><b>(49) 99118-4983<b>").openPopup();
+      marker6.bindPopup("<b>Centro de Triagens Caçador</b><br>Hospital Maicé - 19h às 7h<br><b>(49) 3561-0910<b><br><b>(49) 3561-0924<b><br>Whatsapp<br><b>(49) 99113-5384<b><br><b>(49) 99118-4983<b>");
       var marker = L.marker(latlng).addTo(mymap);
-      marker.bindPopup("<b>Você está aqui!<br>").openPopup();
-      map.setView(new L.LatLng(latlng), 8);
+      marker.bindPopup("<b>Você está aqui!<br>",{ autoPan: false, autoClose: false });
       });
     </script>
     
